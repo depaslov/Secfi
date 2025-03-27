@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    height: 27px;
+    width: 61px;
+    margin-left: 67px;
+    margin-top: 36px;
+  }
+  nav {
+    ul {
+      display: flex;
+      list-style-type: none;
+      gap: 38px;
+      margin-top: 43px;
+      font-size: 13px;
+      margin-left: 51px;
+    }
+  }
+  .buttons {
+    display: flex;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: 117px;
+    font-size: 12px;
+    gap: 34px;
+        .login{
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+        .starter{
+            background-color: #292A2D;
+            color: #EEECE3;
+            padding-left: 26px;
+            padding-right: 26px;
+            padding-top: 13px;
+            padding-bottom: 14px;
+            border-radius: 21px;
+            box-shadow: 0 7px 6px rgba(0, 0, 0, 0.33);
+        }
+  }
+}
