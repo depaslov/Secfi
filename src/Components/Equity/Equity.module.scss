@@ -1,0 +1,75 @@
+.equity {
+    display: flex;
+    justify-content: space-between;
+    position: relative; 
+    margin-left: 67px;
+    margin-right: 100px;
+
+    .text {
+        margin-top: 161px;
+
+        .financing { 
+            font-size: 42px;
+            font-weight: 330;
+        }
+
+        .startup {
+            font-size: 33px;
+            font-weight: 100;
+            letter-spacing: 2px;
+            margin-bottom: 33px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+        button {
+            margin-top: 21px;
+            background-color: #292A2D;
+            color: #EEECE3;
+            padding: 13px 26px;
+            border-radius: 40px;
+        }
+    }
+
+    .images {
+        position: relative;
+        width: 500px; 
+        transform: translateX(70px);
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .woman {
+            position: relative;
+            z-index: 1;
+            margin-top: 51px;
+        }
+
+        .exercise {
+            position: absolute;
+            top: 30%;
+            right: 82%;
+            z-index: 2;
+
+        }
+
+        .circle {
+            position: absolute;
+            top: 60%;
+            right: 23%;
+            z-index: 4;
+        }
+
+        .ipo {
+            position: absolute;
+            bottom: 20%;
+            left: 45%;
+            z-index: 3;
+            width: 150px;
+        }
+    }
+}
