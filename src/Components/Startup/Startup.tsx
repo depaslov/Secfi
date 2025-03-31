@@ -91,24 +91,40 @@ const Startup = () => {
               My company is <br /> going public or <br /> getting acquired
             </p>
             <img src={man1} alt="man1" />
+            <div className={startup.openCollection}>
+              <span>Open collection</span>
+              <button className={startup.arrowButton}>←</button>
+            </div>
           </div>
           <div className={startup.managing}>
             <p>
               Managing wealth <br /> with stock options
             </p>
             <img src={man2} alt="man2" />
+            <div className={startup.openCollection}>
+              <span>Open collection</span>
+              <button className={startup.arrowButton}>←</button>
+            </div>
           </div>
           <div className={startup.exerting}>
             <p>
               Exercising <br /> stock options
             </p>
             <img src={woman1} alt="woman1" />
+            <div className={startup.openCollection}>
+              <span>Open collection</span>
+              <button className={startup.arrowButton}>←</button>
+            </div>
           </div>
           <div className={startup.starting}>
             <p>
               Starting a new job <br /> with stock options
             </p>
             <img src={woman2} alt="woman2" />
+            <div className={startup.openCollection}>
+              <span>Open collection</span>
+              <button className={startup.arrowButton}>←</button>
+            </div>
           </div>
         </div>
       </div>

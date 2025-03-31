@@ -41,6 +41,7 @@
     margin-right: 201px;
   }
 }
+
 .banner4 {
   display: flex;
   justify-content: space-between;
@@ -71,6 +72,7 @@
     }
   }
 }
+
 .banner5 {
   background-color: #313236;
   padding-left: 10px;
@@ -121,6 +123,7 @@
     }
   }
 }
+
 .know {
   text-align: center;
   font-size: 19px;
@@ -128,63 +131,100 @@
   margin-bottom: 34px;
   font-weight: 50;
 }
+
 .banner6 {
   display: flex;
   justify-content: center;
   gap: 25px;
+  margin: 0 auto;
+  max-width: 1200px;
+  
+  .company, .managing, .exerting, .starting {
+    position: relative;
+    width: 280px;
+    height: 430px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    
+    p {
+      color: white;
+      font-size: 20px;
+      margin-top: 21px;
+      margin-right: 59px;
+      margin-left: 25px;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+      font-weight: 50;
+    }
+    
+    img {
+      margin-top: auto;
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    
+    .openCollection {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      background-color: white;
+      color: #333;
+      font-size: 14px;
+      border-top: 1px solid #eee;
+      
+      span {
+        font-size: 14px;
+        color: #555;
+      }
+      
+      .arrowButton {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 18px;
+        color: #555;
+        
+        &:hover {
+          background-color: #f5f5f5;
+        }
+      }
+    }
+  }
+  
   .company {
     background-color: #879ead;
-    p {
-      color: white;
-      font-size: 20px;
-      margin-top: 21px;
-      margin-right: 59px;
-      margin-left: 25px;
-      margin-bottom: 12px;
-      letter-spacing: 2px;
-      font-weight: 50;
-    }
   }
+  
   .managing {
     background-color: #1a5866;
-    p {
-      color: white;
-      font-size: 20px;
-      margin-top: 21px;
-      margin-right: 59px;
-      margin-left: 25px;
-      margin-bottom: 12px;
-      letter-spacing: 2px;
-      font-weight: 50;
-    }
   }
+  
   .exerting {
     background-color: #776c62;
-    p {
-      color: white;
-      font-size: 20px;
-      margin-top: 21px;
-      margin-right: 59px;
-      margin-left: 25px;
-      margin-bottom: 12px;
-      letter-spacing: 2px;
-      font-weight: 50;
-    }
   }
+  
   .starting {
     background-color: #99958e;
-    p {
-      color: white;
-      font-size: 20px;
-      margin-top: 21px;
-      margin-right: 59px;
-      margin-left: 25px;
-      margin-bottom: 12px;
-      letter-spacing: 2px;
-      font-weight: 50;
-    }
   }
 }
+
 @media (max-width: 1024px) {
   .startup {
     margin-left: 50px;
@@ -247,11 +287,17 @@
   .banner6 {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
+    
     .company, .managing, .exerting, .starting {
-      max-width: 45%;
+      width: 45%;
+      max-width: 380px;
+      height: auto;
+      margin-bottom: 30px;
     }
   }
 }
+
 @media (max-width: 500px) {
   .startup {
     margin-left: 20px;
@@ -272,6 +318,7 @@
     .cont {
       .we {
         font-size: 18px;
+        margin-right: 20px;
       }
       .our {
         font-size: 12px;
@@ -313,9 +360,12 @@
   .banner6 {
     flex-direction: column;
     align-items: center;
+    
     .company, .managing, .exerting, .starting {
-      max-width: 90%;
+      width: 90%;
+      max-width: 350px;
+      height: auto;
+      margin-bottom: 25px;
     }
   }
 }
-
