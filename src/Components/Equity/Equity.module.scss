@@ -30,6 +30,12 @@
       color: #eeece3;
       padding: 13px 26px;
       border-radius: 40px;
+      border: none;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: #3a3b3f;
+      }
     }
   }
 
@@ -71,11 +77,122 @@
       width: 150px;
     }
   }
+  
+  @media (max-width: 1024px) {
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    .text {
+      margin-top: 100px;
+      
+      .financing {
+        font-size: 36px;
+      }
+      
+      .startup {
+        font-size: 28px;
+      }
+      
+      .getequity {
+        br {
+          display: none;
+        }
+      }
+    }
+    
+    .images {
+      width: 400px;
+      transform: translateX(20px);
+      
+      .exercise {
+        width: 80%;
+        right: 75%;
+      }
+      
+      .circle {
+        width: 80%;
+      }
+      
+      .ipo {
+        width: 120px;
+      }
+    }
+  }
+  
+  @media (max-width: 500px) {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    .text {
+      margin-top: 50px;
+      text-align: center;
+      
+      .financing {
+        font-size: 30px;
+      }
+      
+      .startup {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        font-size: 12px;
+      }
+    }
+    
+    .images {
+      width: 100%;
+      transform: none;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      
+      .woman {
+        width: 80%;
+        max-width: 300px;
+        margin-top: 20px;
+      }
+      
+      .exercise {
+        top: 20%;
+        right: auto;
+        left: 10%;
+        width: 30%;
+      }
+      
+      .circle {
+        top: 60%;
+        right: 10%;
+        width: 20%;
+      }
+      
+      .ipo {
+        bottom: 10%;
+        left: 40%;
+        width: 30%;
+        max-width: 100px;
+      }
+    }
+  }
 }
+
 hr {
   margin-left: 67px;
   margin-right: 100px;
   margin-top: -4px;
+  
+  @media (max-width: 1024px) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  @media (max-width: 500px) {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
 }
 
 .block2 {
@@ -84,23 +201,24 @@ hr {
   margin-left: 66px;
   margin-top: 39px;
   margin-right: 20px;
+  
   .work {
     font-size: 10px;
     color: #73726c;
   }
+  
   .website {
     font-size: 13px;
     color: #004250;
   }
+  
   .frame {
     margin-top: 84px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 30px;
+    padding: 30px 20px 10px 30px;
     border-radius: 30px;
     border: 1px solid #bfcacb;
   }
+  
   .policy {
     display: flex;
     gap: 17px;
@@ -108,23 +226,37 @@ hr {
     margin-top: 21px;
     align-items: center;
     color: #004250;
+    
+    a {
+      text-decoration: none;
+      color: #004250;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
     button {
       background-color: #004250;
       color: #ffffff;
-      padding-top: 13px;
-      padding-bottom: 13px;
-      padding-right: 26px;
-      padding-left: 26px;
+      padding: 13px 26px;
       border-radius: 40px;
       margin-left: 174px;
       cursor: pointer;
+      border: none;
+      
+      &:hover {
+        background-color: #005a6e;
+      }
     }
   }
+  
   .leading {
     font-size: 9px;
     color: #73726c;
     margin-left: 100px;
   }
+  
   .center {
     .got {
       font-size: 26px;
@@ -132,6 +264,7 @@ hr {
       margin-top: 12px;
       font-weight: 50;
     }
+    
     .see {
       text-align: center;
       font-size: 15px;
@@ -139,9 +272,104 @@ hr {
       font-weight: 50;
     }
   }
+  
   .chat {
     height: 60px;
     width: 60px;
     margin-top: 144px;
+  }
+  
+  @media (max-width: 1024px) {
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    .frame {
+      margin-top: 50px;
+      padding: 20px 15px 10px 20px;
+    }
+    
+    .policy {
+      flex-wrap: wrap;
+      
+      button {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+      }
+    }
+    
+    .leading {
+      margin-left: 50px;
+    }
+    
+    .center {
+      .got {
+        font-size: 22px;
+      }
+      
+      .see {
+        font-size: 14px;
+        
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  // Адаптація для екранів до 500px
+  @media (max-width: 500px) {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    .work {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .frame {
+      margin-top: 30px;
+      padding: 15px;
+      
+      .website {
+        br {
+          display: none;
+        }
+      }
+    }
+    
+    .policy {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      
+      button {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+    
+    .leading {
+      margin-left: 0;
+      text-align: center;
+      margin-top: 15px;
+    }
+    
+    .center {
+      .got {
+        font-size: 20px;
+        text-align: center;
+      }
+      
+      .see {
+        font-size: 13px;
+      }
+    }
+    
+    .chat {
+      margin: 30px auto;
+      display: block;
+    }
   }
 }

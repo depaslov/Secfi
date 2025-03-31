@@ -1,15 +1,29 @@
+import { useState } from "react";
 import header from "./Header.module.scss";
 import logo from "../../../public/Logo.svg";
 
 const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <header className={header.header}>
-      <div>
+      <div className={header.logoContainer}>
         <a href="/">
           <img className={header.logo} src={logo} alt="logo" />
         </a>
       </div>
-      <nav>
+      
+      <div className={header.mobileMenuButton} onClick={toggleMobileMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <nav className={`${mobileMenuOpen ? header.mobileMenuOpen : ""}`}>
         <ul>
           <li><a href="/">Learn</a></li>
           <li><a href="/">Plan</a></li>
@@ -18,6 +32,7 @@ const Header = () => {
           <li><a href="/">About</a></li>
         </ul>
       </nav>
+      
       <div className={header.buttons}>
         <button className={header.login}>Log in</button>
         <button className={header.starter}>Get started</button>
@@ -25,4 +40,5 @@ const Header = () => {
     </header>
   );
 };
+
 export default Header;

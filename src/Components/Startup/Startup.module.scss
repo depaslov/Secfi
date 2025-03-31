@@ -185,3 +185,137 @@
     }
   }
 }
+@media (max-width: 1024px) {
+  .startup {
+    margin-left: 50px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .why {
+      .as {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        margin-top: 50px;
+      }
+    }
+
+    .cont {
+      margin-top: 50px;
+      .our {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .banner4 {
+    flex-direction: column;
+    align-items: center;
+    img {
+      margin: 50px auto;
+      max-width: 80%;
+    }
+    .text {
+      text-align: center;
+      margin-right: 0;
+      p:nth-of-type(2) {
+        font-size: 80px;
+      }
+    }
+  }
+
+  .banner5 {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .banners {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .realize {
+      max-width: 80%;
+      text-align: center;
+      p:first-of-type {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .banner6 {
+    flex-wrap: wrap;
+    justify-content: center;
+    .company, .managing, .exerting, .starting {
+      max-width: 45%;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .startup {
+    margin-left: 20px;
+    text-align: center;
+
+    .why {
+      p:nth-of-type(2) {
+        font-size: 28px;
+      }
+      .as {
+        img {
+          width: 20px;
+          height: 10px;
+        }
+      }
+    }
+
+    .cont {
+      .we {
+        font-size: 18px;
+      }
+      .our {
+        font-size: 12px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .banner4 {
+    img {
+      max-width: 100%;
+      margin: 20px auto;
+    }
+    .text {
+      p:nth-of-type(2) {
+        font-size: 60px;
+      }
+    }
+  }
+
+  .banner5 {
+    .testi {
+      p:nth-of-type(2) {
+        font-size: 30px;
+      }
+    }
+    .banners {
+      flex-direction: column;
+      align-items: center;
+    }
+    .realize {
+      max-width: 100%;
+      p:first-of-type {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .banner6 {
+    flex-direction: column;
+    align-items: center;
+    .company, .managing, .exerting, .starting {
+      max-width: 90%;
+    }
+  }
+}
+

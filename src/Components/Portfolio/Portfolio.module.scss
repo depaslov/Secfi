@@ -1,9 +1,23 @@
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  text-align: center;
+}
+
 .img {
   display: block;
   margin: auto;
   margin-top: 65px;
   margin-bottom: 74px;
 }
+
+.arrowLink {
+  display: inline-block;
+}
+
 .help {
   display: flex;
   margin-top: 87px;
@@ -11,29 +25,42 @@
   justify-content: center;
   font-size: 27px;
   font-weight: 50;
+  text-align: center;
 }
+
+.bannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .work {
   display: flex;
   background-color: #fbfbf6;
   justify-content: space-between;
   padding-left: 133px;
   padding-right: 133px;
+  
   .ipo {
     padding-top: 276px;
     padding-bottom: 283px;
+    
     p:first-of-type {
       color: #73726c;
       font-size: 12px;
       margin-bottom: 9px;
     }
+    
     p:nth-of-type(2) {
       font-size: 23px;
       font-weight: 50;
       margin-bottom: 26px;
     }
+    
     .buttons {
       display: flex;
       gap: 39px;
+      
       button:first-of-type {
         background-color: #292a2d;
         color: #eeece3;
@@ -44,60 +71,206 @@
         border-radius: 40px;
         cursor: pointer;
         font-size: 12px;
+        border: none;
+        
+        &:hover {
+          background-color: #3a3b3f;
+        }
       }
+      
       button:nth-of-type(2) {
         border: none;
         background-color: #fbfbf6;
         cursor: pointer;
         font-size: 12px;
+        
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
 }
-.banner{
-    margin-top: 133px;
+
+.banner {
+  margin-top: 133px;
+  max-width: 100%;
+  height: auto;
 }
-.work2{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 133px;
-    padding-right: 225px;
-    .ipo {
-      padding-top: 210px;
-      padding-bottom: 283px;
-      p:first-of-type {
-        color: #73726c;
+
+.work2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 133px;
+  padding-right: 225px;
+  
+  .ipo {
+    padding-top: 210px;
+    padding-bottom: 283px;
+    
+    p:first-of-type {
+      color: #73726c;
+      font-size: 12px;
+      margin-bottom: 9px;
+    }
+    
+    p:nth-of-type(2) {
+      font-size: 23px;
+      font-weight: 50;
+      margin-bottom: 26px;
+    }
+    
+    .buttons {
+      display: flex;
+      gap: 39px;
+      
+      button:first-of-type {
+        background-color: #292a2d;
+        color: #eeece3;
+        padding-left: 26px;
+        padding-right: 26px;
+        padding-top: 13px;
+        padding-bottom: 14px;
+        border-radius: 40px;
+        cursor: pointer;
         font-size: 12px;
-        margin-bottom: 9px;
-      }
-      p:nth-of-type(2) {
-        font-size: 23px;
-        font-weight: 50;
-        margin-bottom: 26px;
-      }
-      .buttons {
-        display: flex;
-        gap: 39px;
-        button:first-of-type {
-          background-color: #292a2d;
-          color: #eeece3;
-          padding-left: 26px;
-          padding-right: 26px;
-          padding-top: 13px;
-          padding-bottom: 14px;
-          border-radius: 40px;
-          cursor: pointer;
-          font-size: 12px;
+        border: none;
+        
+        &:hover {
+          background-color: #3a3b3f;
         }
-        button:nth-of-type(2) {
-          border: none;
-          background-color: white;
-          cursor: pointer;
-          font-size: 12px;
+      }
+      
+      button:nth-of-type(2) {
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        font-size: 12px;
+        
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
   }
-  .banner{
-      margin-top: 133px;
+}
+
+@media (max-width: 1024px) {
+  .img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 80%;
   }
+  
+  .help {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 0 20px;
+  }
+  
+  .work, .work2 {
+    padding-left: 60px;
+    padding-right: 60px;
+    
+    .ipo {
+      padding-top: 150px;
+      padding-bottom: 150px;
+      
+      p:nth-of-type(2) {
+        font-size: 20px;
+        
+        br {
+          display: none;
+        }
+      }
+      
+      .buttons {
+        gap: 20px;
+        
+        button:first-of-type, button:nth-of-type(2) {
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+  
+  .banner {
+    margin-top: 80px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 70%;
+  }
+  
+  .help {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 0 15px;
+  }
+  
+  .work, .work2 {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    
+    .ipo {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: center;
+      order: 1;
+      
+      p:first-of-type {
+        font-size: 11px;
+      }
+      
+      p:nth-of-type(2) {
+        font-size: 18px;
+      }
+      
+      .buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        
+        button:first-of-type, button:nth-of-type(2) {
+          padding: 10px 20px;
+          width: 100%;
+          max-width: 200px;
+        }
+        
+        button:nth-of-type(2) {
+          background-color: transparent;
+        }
+      }
+    }
+    
+    .bannerContainer {
+      order: 2;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  .work2 {
+    .ipo {
+      order: 1;
+    }
+    
+    .bannerContainer {
+      order: 2;
+    }
+  }
+  
+  .banner {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+}
